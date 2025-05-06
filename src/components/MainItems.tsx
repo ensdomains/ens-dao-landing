@@ -2,8 +2,8 @@ import dao from "../assets/dao.svg";
 import discord from "../assets/discord.svg";
 import discuss from "../assets/discuss.svg";
 import governance from "../assets/governance.svg";
-import mirror from "../assets/mirror.svg";
 import tally from "../assets/tally.svg";
+import agora from "../assets/agora.svg";
 
 type BoxData = {
   icon: string;
@@ -18,49 +18,49 @@ const standardBoxData: BoxData[] = [
   {
     icon: dao,
     text: "Delegate $ENS",
-    color: "#A764FC",
-    backgroundColor: "rgba(180, 120, 255, 0.1)",
-    borderColor: "#D6B6FF",
+    color: "#007C23",
+    backgroundColor: "#C5DDCC",
+    borderColor: "#007C23",
     link: "https://delegate.ens.domains",
   },
   {
     icon: discuss,
     text: "Join the forum",
-    color: "#DE7224",
-    backgroundColor: "rgba(238, 148, 83, 0.1)",
-    borderColor: "#F8D1B6",
+    color: "#F53293",
+    backgroundColor: "#F2C4DA",
+    borderColor: "#F53293",
     link: "https://discuss.ens.domains/",
   },
   {
     icon: tally,
-    text: "Vote on proposals",
-    color: "#00CBB5",
-    backgroundColor: "rgba(98, 244, 228, 0.2)",
-    borderColor: "#62F4E4",
-    link: "https://www.tally.xyz/governance/eip155:1:0x323A76393544d5ecca80cd6ef2A560C6a395b7E3",
+    text: "Vote on Tally",
+    color: "#674D49",
+    backgroundColor: "rgba(103, 77, 73, 0.1)",
+    borderColor: "#674D49",
+    link: "https://tally.ensdao.org",
   },
   {
     icon: governance,
     text: "Documentation",
-    color: "#4D90F1",
-    backgroundColor: "rgba(77, 144, 241, 0.1)",
-    borderColor: "#B0D0FF",
+    color: "#0080BC",
+    backgroundColor: "#CEE1E8",
+    borderColor: "#0080BC",
     link: "https://docs.ens.domains/v/governance/",
   },
   {
     icon: discord,
     text: "Chat on Discord",
-    color: "#854BFF",
-    backgroundColor: "#E1DAF7",
-    borderColor: "#C0B2EA",
+    color: "#093C52",
+    backgroundColor: "rgba(9, 60, 82, 0.1)",
+    borderColor: "#093C52",
     link: "https://chat.ens.domains/",
   },
   {
-    icon: mirror,
-    text: "Read on Mirror",
-    color: "#2C2C32",
-    backgroundColor: "#E8E7EF",
-    borderColor: "#D2CFE4",
+    icon: agora,
+    text: "Vote on Agora",
+    color: "#011A25",
+    backgroundColor: "rgba(1, 26, 37, 0.1)",
+    borderColor: "#011A25",
     link: "https://ens.mirror.xyz/",
   },
 ];
@@ -87,10 +87,7 @@ const StandardBox = ({
     >
       <div>
         <div>
-          <img
-            style={{ width: icon === governance ? "40px" : "initial" }}
-            src={icon}
-          />
+          <img src={icon} />
         </div>
         <div>
           <div

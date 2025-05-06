@@ -8,12 +8,12 @@ const headerLinks = [
     link: "https://basics.ensdao.org",
   },
   {
-    text: "Grants",
-    link: "https://ensgrants.xyz",
-  },
-  {
     text: "Agora",
     link: "https://agora.ensdao.org",
+  },
+  {
+    text: "Tally",
+    link: "https://tally.ensdao.org",
   },
   {
     text: "Forum",
