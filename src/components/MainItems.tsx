@@ -2,7 +2,7 @@ import dao from "../assets/dao.svg";
 import discord from "../assets/discord.svg";
 import discuss from "../assets/discuss.svg";
 import governance from "../assets/governance.svg";
-import mirror from "../assets/mirror.svg";
+import agora from "../assets/agora.svg";
 import tally from "../assets/tally.svg";
 
 type BoxData = {
@@ -33,11 +33,11 @@ const standardBoxData: BoxData[] = [
   },
   {
     icon: tally,
-    text: "Vote on proposals",
+    text: "Vote on Tally",
     color: "#00CBB5",
     backgroundColor: "rgba(98, 244, 228, 0.2)",
     borderColor: "#62F4E4",
-    link: "https://www.tally.xyz/governance/eip155:1:0x323A76393544d5ecca80cd6ef2A560C6a395b7E3",
+    link: "https://tally.ensdao.org/",
   },
   {
     icon: governance,
@@ -45,7 +45,7 @@ const standardBoxData: BoxData[] = [
     color: "#4D90F1",
     backgroundColor: "rgba(77, 144, 241, 0.1)",
     borderColor: "#B0D0FF",
-    link: "https://docs.ens.domains/v/governance/",
+    link: "https://docs.ens.domains/dao/",
   },
   {
     icon: discord,
@@ -56,12 +56,12 @@ const standardBoxData: BoxData[] = [
     link: "https://chat.ens.domains/",
   },
   {
-    icon: mirror,
-    text: "Read on Mirror",
+    icon: agora,
+    text: "Vote on Agora",
     color: "#2C2C32",
     backgroundColor: "#E8E7EF",
     borderColor: "#D2CFE4",
-    link: "https://ens.mirror.xyz/",
+    link: "https://agora.ensdao.org/",
   },
 ];
 

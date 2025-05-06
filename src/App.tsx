@@ -5,15 +5,15 @@ import MainItems from "./components/MainItems";
 const headerLinks = [
   {
     text: "Basics",
-    link: "https://basics.ensdao.org",
-  },
-  {
-    text: "Grants",
-    link: "https://ensgrants.xyz",
+    link: "https://basics.ensdao.org/",
   },
   {
     text: "Agora",
-    link: "https://agora.ensdao.org",
+    link: "https://agora.ensdao.org/",
+  },
+  {
+    text: "Tally",
+    link: "https://tally.ensdao.org/",
   },
   {
     text: "Forum",
@@ -21,7 +21,7 @@ const headerLinks = [
   },
   {
     text: "Docs",
-    link: "https://docs.ens.domains/v/governance/",
+    link: "https://docs.ens.domains/dao/",
   },
 ];
 
