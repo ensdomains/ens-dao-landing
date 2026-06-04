@@ -33,11 +33,11 @@ const standardBoxData: BoxData[] = [
   },
   {
     icon: tally,
-    text: "Vote on Tally",
+    text: "Vote on Proposals",
     color: "#00CBB5",
     backgroundColor: "rgba(98, 244, 228, 0.2)",
     borderColor: "#62F4E4",
-    link: "https://tally.ensdao.org/",
+    link: "https://vote.ensdao.org/",
   },
   {
     icon: governance,
@@ -49,19 +49,19 @@ const standardBoxData: BoxData[] = [
   },
   {
     icon: discord,
-    text: "Chat on Discord",
+    text: "Follow on X",
     color: "#854BFF",
     backgroundColor: "#E1DAF7",
     borderColor: "#C0B2EA",
-    link: "https://chat.ens.domains/",
+    link: "https://x.com/ENS_DAO/",
   },
   {
     icon: agora,
-    text: "Vote on Agora",
+    text: "Learn the Basics",
     color: "#2C2C32",
     backgroundColor: "#E8E7EF",
     borderColor: "#D2CFE4",
-    link: "https://agora.ensdao.org/",
+    link: "https://basics.ensdao.org/",
   },
 ];
 
