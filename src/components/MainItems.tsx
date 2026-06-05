@@ -3,7 +3,6 @@ import documentation from "../assets/documentation.svg";
 import xLogo from "../assets/x.svg";
 import discuss from "../assets/discuss.svg";
 import governance from "../assets/governance.svg";
-import tally from "../assets/tally.svg";
 
 type BoxData = {
   icon: string;
