@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "pnpm build && wrangler pages deploy --branch main",
+    "deploy:preview": "pnpm build && wrangler pages deploy --branch preview"
   },
   "packageManager": "pnpm@10.15.1",
   "dependencies": {
