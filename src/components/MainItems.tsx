@@ -1,12 +1,12 @@
 import dao from "../assets/dao.svg";
-import discord from "../assets/discord.svg";
+import documentation from "../assets/documentation.svg";
+import xLogo from "../assets/x.svg";
 import discuss from "../assets/discuss.svg";
 import governance from "../assets/governance.svg";
-import agora from "../assets/agora.svg";
-import tally from "../assets/tally.svg";
 
 type BoxData = {
   icon: string;
+  iconWidth?: number;
   text: string;
   color: string;
   backgroundColor: string;
@@ -32,15 +32,17 @@ const standardBoxData: BoxData[] = [
     link: "https://discuss.ens.domains/",
   },
   {
-    icon: tally,
-    text: "Vote on Tally",
+    icon: governance,
+    iconWidth: 40,
+    text: "Vote on Proposals",
     color: "#00CBB5",
     backgroundColor: "rgba(98, 244, 228, 0.2)",
     borderColor: "#62F4E4",
-    link: "https://tally.ensdao.org/",
+    link: "https://vote.ensdao.org/",
   },
   {
-    icon: governance,
+    icon: documentation,
+    iconWidth: 40,
     text: "Documentation",
     color: "#4D90F1",
     backgroundColor: "rgba(77, 144, 241, 0.1)",
@@ -48,20 +50,21 @@ const standardBoxData: BoxData[] = [
     link: "https://docs.ens.domains/dao/",
   },
   {
-    icon: discord,
-    text: "Chat on Discord",
+    icon: dao,
+    text: "Learn the Basics",
     color: "#854BFF",
     backgroundColor: "#E1DAF7",
     borderColor: "#C0B2EA",
-    link: "https://chat.ens.domains/",
+    link: "https://basics.ensdao.org/",
   },
   {
-    icon: agora,
-    text: "Vote on Agora",
+    icon: xLogo,
+    iconWidth: 38,
+    text: "Follow on X",
     color: "#2C2C32",
     backgroundColor: "#E8E7EF",
     borderColor: "#D2CFE4",
-    link: "https://agora.ensdao.org/",
+    link: "https://x.com/ENS_DAO/",
   },
 ];
 
@@ -70,6 +73,7 @@ const StandardBox = ({
   backgroundColor,
   text,
   icon,
+  iconWidth,
   borderColor,
   link,
 }: BoxData) => {
@@ -88,7 +92,7 @@ const StandardBox = ({
       <div>
         <div>
           <img
-            style={{ width: icon === governance ? "40px" : "initial" }}
+            style={{ width: iconWidth ? `${iconWidth}px` : undefined }}
             src={icon}
           />
         </div>
